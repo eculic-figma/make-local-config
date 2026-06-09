@@ -4,10 +4,9 @@ set -euo pipefail
 # Environment variables for the project.
 # Vite exposes variables prefixed with VITE_ to client code.
 
+# Dev server
+export VITE_PORT="${VITE_PORT:-5173}"
+export VITE_HOST="${VITE_HOST:-localhost}"
+
 # API endpoints (set these for your environment)
 # export VITE_API_URL="http://localhost:3000"
-
-# Feature flags
-# export VITE_ENABLE_DEBUG="true"
-PORT=5173
-FIGMA_MAKE_URL=http://localhost:5173
