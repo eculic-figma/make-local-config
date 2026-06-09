@@ -140,10 +140,10 @@ src/
 ## Development
 
 ```bash
-npm run dev      # Start dev server (http://localhost:5173)
-npm run build    # Build for production
-npm run preview  # Preview production build
-npm run lint     # Run ESLint
+pnpm run dev      # Start dev server (http://localhost:5173)
+pnpm run build    # Build for production
+pnpm run preview  # Preview production build
+pnpm run lint     # Run ESLint
 ```
 
 ## Design Token Mapping

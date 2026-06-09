@@ -27,7 +27,7 @@ fi
 
 # Lint check
 echo "Checking ESLint..."
-if npm run lint --silent 2>/dev/null; then
+if pnpm run lint --silent 2>/dev/null; then
   echo "  OK: No lint errors."
 else
   echo "  FAIL: Lint errors detected." >&2
@@ -36,7 +36,7 @@ fi
 
 # Production build check
 echo "Checking production build..."
-if npm run build --silent 2>/dev/null; then
+if pnpm run build --silent 2>/dev/null; then
   echo "  OK: Production build succeeded."
 else
   echo "  FAIL: Production build failed." >&2

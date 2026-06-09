@@ -15,10 +15,10 @@ if [ "$NODE_MAJOR" -lt 18 ]; then
   exit 1
 fi
 
-# Require npm
-if ! command -v npm &>/dev/null; then
-  echo "Error: npm is not installed." >&2
+# Require pnpm
+if ! command -v pnpm &>/dev/null; then
+  echo "Error: pnpm is not installed." >&2
   exit 1
 fi
 
-echo "System dependencies OK (Node $(node -v), npm $(npm -v))."
+echo "System dependencies OK (Node $(node -v), pnpm $(pnpm -v))."

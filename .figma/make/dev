@@ -8,4 +8,4 @@ cd "$(dirname "$0")/../.."
 # Load environment variables
 source .figma/make/env
 
-exec npm run dev
+exec pnpm run dev
