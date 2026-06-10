@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import "./App.css";
 
-const FISH_EMOJIS = ["🐟", "🐠", "🐡", "🐋", "🐳", "🦈", "🐙", "🦑", "🦀", "🐢", "🦞", "🐚", "🦐", "🪼", "🐬", "🦭", "🐧", "🦩", "🐊", "🪸"];
+const FISH_EMOJIS = ["🦈"];
 const FISH_COUNT = 30;
 const FLEE_RADIUS = 200;
 const FLEE_FORCE = 300;
@@ -189,7 +189,7 @@ export default function App() {
           textShadow: "0 0 10px rgba(173,216,230,0.5)",
         }}
       >
-        🐠 click anywhere 🐟
+        🦈 click anywhere 🦈
       </div>
 
       <style>{`
