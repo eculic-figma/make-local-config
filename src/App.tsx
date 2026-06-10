@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import "./App.css";
-
 const FISH_EMOJIS = ["🦈"];
 const FISH_COUNT = 30;
 const FLEE_RADIUS = 200;
