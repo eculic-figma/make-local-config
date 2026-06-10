@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
@@ -19,7 +19,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss(), figmaPreviewScript()],
   server: {
     host: '0.0.0.0',
-    port: parseInt(process.env.PORT || '8443'),  // ← was defaulting to 5173
+    port: parseInt(process.env.PORT || '8443'),
     strictPort: true,
     hmr: (process.env.FIGMA === '1' || process.env.FIGMA === 'true') ? { clientPort: 443 } : undefined,
     watch: { ignored: ['**/.figma/**'] },
